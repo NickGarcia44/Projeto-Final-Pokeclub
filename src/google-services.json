@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "320659141969",
+    "firebase_url": "https://pokeclub-9a32b-default-rtdb.firebaseio.com",
+    "project_id": "pokeclub-9a32b",
+    "storage_bucket": "pokeclub-9a32b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320659141969:android:8df0ed2b6dfaaeebeecf70",
+        "android_client_info": {
+          "package_name": "poke.club"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz77WoGtuk1EL0PBj6MilqNw9PvHeo9o4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/profile">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Pokémons
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterPokemons()"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let pokemon of filteredPokemons; let i = index" [routerLink]="['/pokemon', i + 1]" [ngClass]="getTypeClass(pokemon)">
+      <ion-thumbnail slot="start">
+        <img [src]="getPokemonImage(i)">
+      </ion-thumbnail>
+      <ion-label>{{ pokemon.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

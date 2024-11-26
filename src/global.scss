@@ -1,0 +1,125 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Paleta de cores inspirada em Pokémon */
+/* Paleta de cores inspirada em Pokémon */
+/* Paleta de cores inspirada em Pokémon */
+:root {
+  --pokemon-red: #CC0000;
+  --pokemon-blue: #3B4CCA;
+  --pokemon-black: #000000;
+  --pokemon-white: #FFFFFF;
+}
+
+/* Corpo principal */
+ion-content {
+  --background: var(--pokemon-black);
+  --color: var(--pokemon-white);
+  font-family: 'Arial', sans-serif;
+  padding: 16px;
+}
+
+/* Cabeçalho */
+ion-header, ion-toolbar {
+  --background: var(--pokemon-red);
+  --color: var(--pokemon-white);
+  text-align: center;
+  padding: 10px 0;
+}
+
+ion-back-button {
+  --background: transparent;
+  --color: var(--pokemon-white);
+  --border-radius: 4px;
+  padding: 5px 10px;
+}
+
+ion-back-button:hover {
+  --background: var(--pokemon-blue);
+  --color: var(--pokemon-white);
+}
+
+/* Navegação */
+ion-nav, ion-tab-bar {
+  --background: var(--pokemon-red);
+  --color: var(--pokemon-white);
+  text-align: center;
+}
+
+ion-tab-button {
+  color: var(--pokemon-white);
+}
+
+ion-tab-button:hover {
+  text-decoration: underline;
+}
+
+/* Campo de Pesquisa */
+ion-searchbar {
+  --background: var(--pokemon-white);
+  --color: var(--pokemon-black);
+  --placeholder-color: var(--pokemon-black);
+}
+
+/* Botões */
+ion-button {
+  --background: var(--pokemon-red);
+  --color: var(--pokemon-white);
+  --border-radius: 8px;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+ion-button[color="primary"] {
+  --background: var(--pokemon-blue);
+}
+
+ion-button:hover {
+  --background: var(--pokemon-white);
+  --color: var(--pokemon-red);
+}
+
+/* Card de Perfil */
+ion-card {
+  --background: var(--pokemon-white);
+  color: var(--pokemon-black);
+}
+
+ion-card-title {
+  color: var(--pokemon-red);
+}

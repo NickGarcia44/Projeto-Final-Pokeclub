@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text="Voltar"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Seu Perfil</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Nome: Usuário</p>
+      <div style="width: 100px; height: 100px; background-color: black;"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <div style="margin-top: 20px;">
+    <ion-button expand="block" color="danger" routerLink="/login">Login</ion-button>
+    <ion-button expand="block" color="danger" routerLink="/cadastro">Cadastro</ion-button>
+    <ion-button expand="full" (click)="signIn()">Sign in with Google</ion-button>
+  </div>
+</ion-content>
+

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text="Voltar"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{ pokemon?.name }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="pokemon">
+  <ion-card>
+    <img [src]="pokemon.sprites.front_default">
+    <ion-card-header>
+      <ion-card-title>{{ pokemon.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Tipo:</strong> <span *ngFor="let type of pokemon.types">{{ type.type.name }} </span></p>
+      <p><strong>Altura:</strong> {{ pokemon.height }} decímetros</p>
+      <p><strong>Peso:</strong> {{ pokemon.weight }} hectogramas</p>
+      <p><strong>Habilidades:</strong></p>
+      <ul class="ability">
+        <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+      </ul>
+      <p><strong>Estatísticas Básicas:</strong></p>
+      <ul class="stats">
+        <li *ngFor="let stat of pokemon.stats">{{ stat.stat.name }}: {{ stat.base_stat }}</li>
+      </ul>
+      <p><strong>Movimentos:</strong></p>
+      <ul class="moves">
+        <li *ngFor="let move of pokemon.moves">{{ move.move.name }}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
