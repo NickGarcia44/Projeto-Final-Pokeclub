@@ -37,3 +37,18 @@ Um aplicativo feito em **Ionic**, **TypeScript** e **SCSS** que permite explorar
 - **Firebase**  
 - **PokéAPI**  
 - **Google API** 
+
+---
+
+[Login / Criar Conta] <---Firebase Auth---+
+      |                                   |
+      v                                   |
+[Tela Inicial / Lista de Pokémon] --------+
+      |
+      +--> [Detalhes do Pokémon]
+      |
+      +--> [Perfil do Usuário]
+               |
+               +--> Editar Perfil
+               |
+               +--> Logout --> [Login / Criar Conta]
