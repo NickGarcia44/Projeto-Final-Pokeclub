@@ -32,7 +32,7 @@ Um aplicativo feito em **Ionic**, **TypeScript** e **SCSS** que permite explorar
 ## Tecnologias Utilizadas
 
 - **Ionic Framework**  
-- **TypeScript**  
+- **TypeScript and Angular**  
 - **SCSS**  
 - **Firebase**  
 - **PokéAPI**  
