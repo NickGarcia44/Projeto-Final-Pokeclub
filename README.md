@@ -31,8 +31,9 @@ Um aplicativo feito em **Ionic**, **TypeScript**, **Angular** e **SCSS** que per
 
 ## Tecnologias Utilizadas
 
+- **Axios - Biblioteca**
 - **Ionic Framework**  
-- **TypeScript and Angular**  
+- **TypeScript e Angular**  
 - **SCSS**  
 - **Firebase**  
 - **PokéAPI**  
