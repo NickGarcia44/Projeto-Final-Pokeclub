@@ -1,6 +1,6 @@
 # Pokémon Info App - PokeClub
 
-Um aplicativo feito em **Ionic**, **TypeScript** e **SCSS** que permite explorar informações detalhadas sobre Pokémon utilizando a **PokéAPI** e a **API do Google**, com armazenamento de dados no **Firebase**.  
+Um aplicativo feito em **Ionic**, **TypeScript**, **Angular** e **SCSS** que permite explorar informações detalhadas sobre Pokémon utilizando a **PokéAPI** e a **API do Google**, com armazenamento de dados no **Firebase**.  
 
 ---
 
